@@ -1,6 +1,7 @@
 function joinCaseBattle(){
     
-const TARGETS = ['TOXIC', 'DIABLO', 'SPARK', 'ICE BLAST', 'TEETH', 'BEAST', 'SERENITY', 'JOY', 'PROGRESS'];
+// const TARGETS = ['TOXIC', 'DIABLO', 'SPARK', 'ICE BLAST', 'TEETH', 'BEAST', 'SERENITY', 'JOY', 'PROGRESS'];
+const TARGETS = ['KITTY', 'ONIX'];
 
 (async () => {
   while (true) {
