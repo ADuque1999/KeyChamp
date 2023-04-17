@@ -1,7 +1,6 @@
 function joinCaseBattle(){
     
-// const TARGETS = ['TOXIC', 'DIABLO', 'SPARK', 'ICE BLAST', 'TEETH', 'BEAST', 'SERENITY', 'JOY', 'PROGRESS'];
-const TARGETS = ['KITTY', 'ONIX'];
+const TARGETS = ['TOXIC', 'DIABLO', 'SPARK', 'ICE BLAST', 'TEETH', 'BEAST', 'SERENITY', 'JOY', 'PROGRESS', 'KITTY', 'ONYX'];
 
 (async () => {
   while (true) {
@@ -45,4 +44,12 @@ document.addEventListener("DOMContentLoaded", function(){
             }
           });
     })
+})
+
+
+document.addEventListener("DOMContentLoaded", function(){
+  let getButtons = document.getElementsByClassName("button button-green-dimmed mx-auto h-9 px-3 text-2xs")
+  for(buttons of getButtons){
+    getButtons.click();
+  }
 })
