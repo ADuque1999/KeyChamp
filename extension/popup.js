@@ -37,8 +37,13 @@ document.addEventListener("DOMContentLoaded", function(){
               var tabId = tabs[0].id;
               chrome.scripting.executeScript({
                 target: { tabId: tabId },
-                func: [joinCaseBattle, joinAuto]
-              });
+                func: joinCaseBattle
+              },
+              chrome.scripting.executeScript({
+                target: { tabId: tabId },
+                func: joinAuto
+              }
+              );
             } else {
               console.error("No active tab found.");
             }
