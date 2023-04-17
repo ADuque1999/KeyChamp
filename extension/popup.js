@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
               var tabId = tabs[0].id;
               chrome.scripting.executeScript({
                 target: { tabId: tabId },
-                func: joinCaseBattle,
+                func: joinCaseBattle, joinAuto
               });
             } else {
               console.error("No active tab found.");
@@ -49,12 +49,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
 //todo
 
-document.addEventListener("DOMContentLoaded", function(){
-  let getButtons = document.getElementsByClassName("button button-green-dimmed mx-auto h-9 px-3 text-2xs")
-  for(buttons of getButtons){
-    let i = 0;
-    buttons.click();
-    console.time();
-    console.log("button" + i)
+function joinAuto (){
+  var previousUrl = window.location.href;
+
+  setInterval(function() {
+    var currentUrl = window.location.href;
+      if (currentUrl !== previousUrl) {
+        // Código a ejecutar cuando cambia la URL
+        let getBtn = document.getElementsByClassName("button button-green-dimmed mx-auto h-9 px-3 text-2xs")
+        for(btn of Btn){
+          btn.click
+        }
+
+    previousUrl = currentUrl;
   }
-})
+}, 1000); // Comprobar cada segundo
+
+}
