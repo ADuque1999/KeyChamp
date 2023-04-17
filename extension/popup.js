@@ -59,6 +59,7 @@ function joinAuto (){
         let getBtn = document.getElementsByClassName("button button-green-dimmed mx-auto h-9 px-3 text-2xs")
         for(btn of Btn){
           btn.click
+          console.log("click")
         }
 
     previousUrl = currentUrl;
