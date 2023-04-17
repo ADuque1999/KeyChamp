@@ -47,9 +47,14 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 
+//todo
+
 document.addEventListener("DOMContentLoaded", function(){
   let getButtons = document.getElementsByClassName("button button-green-dimmed mx-auto h-9 px-3 text-2xs")
   for(buttons of getButtons){
-    getButtons.click();
+    let i = 0;
+    buttons.click();
+    console.time();
+    console.log("button" + i)
   }
 })
