@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 target: { tabId: tabId },
                 func: joinAuto
               }
-              );
+              ));
             } else {
               console.error("No active tab found.");
             }
